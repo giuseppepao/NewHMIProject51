@@ -283,7 +283,7 @@ Children:
     Id: g=3481e7656563032a2e6c4f07d6d36959
     Type: NodePointer
     DataType: NodeId
-    Value: "/Objects/Users/Anonymous"
+    Value: "/Objects/NewHMIProject51/Security/Users/Operatore1"
     Children:
     - Name: Kind
       Id: g=7bda7f7a46b51bc405ee69ddfe8048b2
@@ -304,6 +304,320 @@ Children:
       Type: PropertyType
       DataType: NodeId
       Value: "/Types/ObjectTypes/BaseObjectType/SessionType/UISession"
+- Name: UISession1
+  Id: g=86ff2d2f6819fff150b204efd162a67a
+  Supertype: UISession
+  Children:
+  - Name: IsInteractive
+    Id: g=ed1ab3a96b83f2259dd1687647cec109
+    Type: BaseDataVariableType
+    DataType: Boolean
+    AccessLevel: Read
+    Value: true
+  - Name: IsNative
+    Id: g=35cb427b38cd7d21e9a26533d80733ee
+    Type: BaseDataVariableType
+    DataType: Boolean
+    AccessLevel: Read
+  - Name: IsWeb
+    Id: g=258c50c78804181332cce18dc233eace
+    Type: BaseDataVariableType
+    DataType: Boolean
+    AccessLevel: Read
+  - Name: IpAddress
+    Id: g=53822363b3b7e8d4e6d041d43816efc6
+    Type: BaseDataVariableType
+    DataType: String
+    AccessLevel: Read
+  - Name: User
+    Id: g=74235575aa5f2088f35c6a11590f1120
+    Type: NodePointer
+    DataType: NodeId
+    AccessLevel: Read
+    Children:
+    - Name: Kind
+      Id: g=387397a1187ced3b65581cc1b7dd4330
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/UserType"
+  - Name: ActualLocaleId
+    Id: g=50f1a0f16e0d9a9d68dc5f64a7687a1a
+    Type: BaseVariableType
+    DataType: LocaleId
+    ReferenceType: HasProperty
+  - Name: ActualLanguage
+    Id: g=00d1d3b710a5996f3cbbadb6f14d3879
+    Type: BaseVariableType
+    DataType: LocaleId
+    ReferenceType: HasProperty
+  - Name: ActualMeasurementSystem
+    Id: g=3dbc86a9016bc653cad49c2979c7608b
+    Type: BaseVariableType
+    DataType: MeasurementSystem
+    ReferenceType: HasProperty
+  - Name: TimeZoneOffset
+    Id: g=b6dca62c882156a33e8db474949f77a4
+    Type: BaseVariableType
+    DataType: TimeZoneDataType
+    ReferenceType: HasProperty
+    AccessLevel: Read
+  - Name: Groups
+    Id: g=3b7ad68efa46d167dbaef841bee9c83a
+    Type: BaseObjectType
+  - Name: Roles
+    Id: g=819ff01db713bbe92b2ab7cb5c793a8f
+    Type: BaseObjectType
+  - Name: Rights
+    Id: g=60d21332e082b71b8d4488cdda81beda
+    Type: BaseObjectType
+  - Class: Reference
+    Target: ns=1;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=1;i=266
+    Direction: Forward
+  - Class: Reference
+    Target: ns=1;i=269
+    Direction: Forward
+  - Class: Reference
+    Target: ns=1;i=272
+    Direction: Forward
+  - Name: LoggedIn
+    Id: g=a6cddcad46767043d6a7dec10a91efe8
+    Type: BaseVariableType
+    DataType: Boolean
+    AccessLevel: Read
+  - Name: IdleTimeoutDuration
+    Id: g=02abf999683d981d105930b95e371a5a
+    Type: BaseDataVariableType
+    DataType: Duration
+    Value: "0:00:00:3.0000000"
+  - Name: IdleTimeoutEnabled
+    Id: g=a3a2282f1c6c7628f10f7c673651d397
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: IdleTimeoutEventHandler1
+    Id: g=37220377d22b7c18291775862f488570
+    Type: EventHandler
+    Children:
+    - Name: ListenEventType
+      Id: g=4717c1dd26b78a9a37f66d34bcbb795a
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/EventTypes/BaseEventType/IdleTimeoutEvent"
+    - Name: MethodsToCall
+      Id: g=97193c4c0239439ab3acebb088b5cc48
+      Type: BaseObjectType
+      Children:
+      - Name: MethodContainer1
+        Id: g=da37f6b378e773ff5eaf717abb403055
+        Type: BaseObjectType
+        Children:
+        - Name: ns=2;ObjectPointer
+          Id: g=3b74b2a920fbf92f0c5dc3db5ed5fb7d
+          Type: NodePointer
+          DataType: NodeId
+          Children:
+          - Name: Kind
+            Id: g=69752401db2dc7a950945a13b35e17a6
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType"
+          - Name: DynamicLink
+            Id: g=cb1438a1c0b58d11a35669bfaaadd535
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../..@NodeId"
+            Children:
+            - Name: Mode
+              Id: g=0bf257f2376008b9c0f41cf4708fdea8
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: ns=2;Method
+          Id: g=86c303a0ba3fc2e3954df6a695ebafac
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Logout"
+      - Name: MethodContainer2
+        Id: g=7e998ea7b9e17c0dce330581838087c0
+        Type: BaseObjectType
+        Children:
+        - Name: ns=2;ObjectPointer
+          Id: g=674eed88e9971fab06847e3e9c9c7aa3
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/Commands/VariableCommands"
+          Children:
+          - Name: Kind
+            Id: g=71d6cfd2636a46fb3ea17a60c3ee6be7
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType"
+        - Name: ns=2;Method
+          Id: g=d6207c73c16917ded32348d3186c5d9b
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Set"
+        - Name: InputArguments
+          Id: g=6b617683e84318ff13d608d346b1c3e9
+          Type: BaseObjectType
+          Children:
+          - Name: VariableToModify
+            Id: g=1a05cec58cb84665e8ce8634581f9f91
+            Type: BaseDataVariableType
+            DataType: VariablePointer
+            Description: {"NamespaceIndex":2,"TextId":"SetVariableToModifyDescription"}
+            Value: "/Objects/NewHMIProject51/Model/Variable1"
+          - Name: Value
+            Id: g=02959c558ecb5505734bc2c3983527a2
+            Type: BaseDataVariableType
+            DataType: Int32
+            Description: {"NamespaceIndex":2,"TextId":"SetValueDescription"}
+            Value: 99
+          - Name: ArrayIndex
+            Id: g=fb6091adca7ba613994bfeb30a9739b9
+            Type: BaseDataVariableType
+            DataType: UInt32
+            Description: {"NamespaceIndex":2,"TextId":"SetArrayIndexDescription"}
+            ValueRank: ScalarOrOneDimension
+    - Name: EventArguments
+      Id: g=6530cdeb19b042375182fc888e2956cd
+      Type: IdleTimeoutEvent
+      Children:
+      - Name: EventId
+        Id: g=172ea32c15c973006c6ef0301e8860d1
+        Type: PropertyType
+        DataType: ByteString
+      - Name: EventType
+        Id: g=d24571254aee2ef771727e3b9ac7a40a
+        Type: PropertyType
+        DataType: NodeId
+      - Name: SourceNode
+        Id: g=363c2e80171ec5aa782e839b1ecf2b16
+        Type: PropertyType
+        DataType: NodeId
+      - Name: SourceName
+        Id: g=761973e71758c7abbb10a939b4f70de4
+        Type: PropertyType
+        DataType: String
+      - Name: Time
+        Id: g=a5ca06e1d355538e5546fbbca4b17ec3
+        Type: PropertyType
+        DataType: UtcTime
+      - Name: ReceiveTime
+        Id: g=188765488eb9a04d7a7e5f46d34d6cb5
+        Type: PropertyType
+        DataType: UtcTime
+      - Name: Message
+        Id: g=e61822b38b383996f6185e3ed143bb4e
+        Type: PropertyType
+        DataType: LocalizedText
+      - Name: Severity
+        Id: g=32b4333f88db6c99f481547419dee6ba
+        Type: PropertyType
+        DataType: UInt16
+  - Name: MeasurementSystem
+    Id: g=6786150e7723b2d329c72dc225d38ec7
+    Type: BaseVariableType
+    DataType: MeasurementSystem
+    ReferenceType: HasProperty
+    ModellingRule: Optional
+  - Name: IdleTimeoutEventHandler2
+    Id: g=1d6b40b3fc8242d2d52940c482f1b6b3
+    Type: EventHandler
+    Children:
+    - Name: ListenEventType
+      Id: g=22253b477128b899b261ddcde611ab77
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/EventTypes/BaseEventType/IdleTimeoutEvent"
+    - Name: MethodsToCall
+      Id: g=9d82697a43678790ed3fb9733da9829a
+      Type: BaseObjectType
+      Children:
+      - Name: MethodContainer1
+        Id: g=551c6a28e077205c369d2d66c93d601c
+        Type: BaseObjectType
+        Children:
+        - Name: ns=2;ObjectPointer
+          Id: g=142c72810b32353693ce1c7bf901cee8
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/Commands/CoreCommands"
+          Children:
+          - Name: Kind
+            Id: g=f443a527347cfafd6b56e88b3c2f4ddd
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType"
+        - Name: ns=2;Method
+          Id: g=13babe2240432ca5b44916f2f501f326
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "ChangeUser"
+        - Name: InputArguments
+          Id: g=753e80648a46078cb7dc181111f1292e
+          Type: BaseObjectType
+          Children:
+          - Name: Username
+            Id: g=b84dfb1e7263dd8267e82bafe20035f3
+            Type: BaseDataVariableType
+            DataType: String
+            Description: {"NamespaceIndex":2,"TextId":"ChangeUserUsernameDescription"}
+            Value: "Anonymous"
+          - Name: Password
+            Id: g=a88e754929faba1502330a06f7307a85
+            Type: BaseDataVariableType
+            DataType: String
+            Description: {"NamespaceIndex":2,"TextId":"ChangeUserPasswordDescription"}
+        - Name: OutputArguments
+          Id: g=68b06c54d175d55cde40082b526b9b96
+          Type: BaseObjectType
+          Children:
+          - Name: Result
+            Id: g=625d089a465cf0d971f75317392ef4c3
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Description: {"NamespaceIndex":2,"TextId":"ChangeUserResultDescription"}
+    - Name: EventArguments
+      Id: g=f36dffe5a0e622ddf7b0fd0325054c34
+      Type: IdleTimeoutEvent
+      Children:
+      - Name: EventId
+        Id: g=24071e744dd98f6354827baa70efa574
+        Type: PropertyType
+        DataType: ByteString
+      - Name: EventType
+        Id: g=0ce7cda7e86dbcdb29dd96c78cbd03a9
+        Type: PropertyType
+        DataType: NodeId
+      - Name: SourceNode
+        Id: g=b59de6cc8cc3e8a3dc89841762344e7d
+        Type: PropertyType
+        DataType: NodeId
+      - Name: SourceName
+        Id: g=fa044aee6848a05392850363c7415920
+        Type: PropertyType
+        DataType: String
+      - Name: Time
+        Id: g=669c8159f19ecacea8aa08881031053c
+        Type: PropertyType
+        DataType: UtcTime
+      - Name: ReceiveTime
+        Id: g=bbca6e3450dc54ab14a9022b10dee7b6
+        Type: PropertyType
+        DataType: UtcTime
+      - Name: Message
+        Id: g=dad0fb70b9c1dd4cd689a758ba0e4c2d
+        Type: PropertyType
+        DataType: LocalizedText
+      - Name: Severity
+        Id: g=e352514be0b236131268632a8ad61159
+        Type: PropertyType
+        DataType: UInt16
 - Name: MainWindow
   Id: g=01a7e8933afd7c95fe894b0859308138
   Supertype: Window
@@ -527,265 +841,6 @@ Children:
       DataType: VerticalAlignment
       ModellingRule: Optional
       Value: 3
-  - Name: IdleTimeoutLogic
-    Id: g=5fdbe652306eeb4bca04fa0268fe8fe3
-    Type: NetLogic
-    WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
-    Children:
-    - Name: Enabled
-      Id: g=063f17a20fe5f657298d695136115fc2
-      Type: BaseDataVariableType
-      DataType: Boolean
-      Value: true
-    - Name: Duration
-      Id: g=afb3db3c3401f312a3ae066ea9160100
-      Type: BaseDataVariableType
-      DataType: Duration
-      Value: "0:01:00:0.0000000"
-    - Name: OnTimeout
-      Id: g=b47a690946a8a9ef1122038ed8f9087d
-      Type: MethodInvocation
-      Children:
-      - Class: Reference
-        Target: ns=2;i=98
-        Direction: Forward
-      - Name: ObjectPointer
-        Id: g=bf7e952f45a6b5e68ee6f524791342fa
-        Type: NodePointer
-        DataType: NodeId
-        Children:
-        - Name: Kind
-          Id: g=968b9d0749a78cb5175139e6f1051bdc
-          Type: PropertyType
-          DataType: NodeId
-          Value: "/Types/ObjectTypes/BaseObjectType"
-      - Name: Method
-        Id: g=8aa997d650db2d3ab1cd6e3294c578ac
-        Type: BaseDataVariableType
-        DataType: String
-    - Name: ns=4;LibraryReference
-      Id: g=e40ee82decd777225f03e4e09703f85d
-      Type: ObjectLibraryReference
-      DataType: ObjectLibraryReferenceDataType
-      ModellingRule: None
-      Value: 
-       {
-        "TypeId": {
-         "Id": 72,
-         "Namespace": 4
-        },
-        "Body": {
-         "libraryGuid": "f0701375ee41467993d632db6a8fdaa5",
-         "objectGuid": "9819596a6fb88d10259fc8280ab8bb9b",
-         "objectVersion": 1,
-         "highestIgnoredVersion": 0
-        }
-       }
 - File: Screens/Screens.yaml
 - File: AdvancedTrend/AdvancedTrend.yaml
 - File: LoginForm/LoginForm.yaml
-- Name: UISession1
-  Id: g=86ff2d2f6819fff150b204efd162a67a
-  Supertype: UISession
-  Children:
-  - Name: IsInteractive
-    Id: g=ed1ab3a96b83f2259dd1687647cec109
-    Type: BaseDataVariableType
-    DataType: Boolean
-    AccessLevel: Read
-    Value: true
-  - Name: IsNative
-    Id: g=35cb427b38cd7d21e9a26533d80733ee
-    Type: BaseDataVariableType
-    DataType: Boolean
-    AccessLevel: Read
-  - Name: IsWeb
-    Id: g=258c50c78804181332cce18dc233eace
-    Type: BaseDataVariableType
-    DataType: Boolean
-    AccessLevel: Read
-  - Name: IpAddress
-    Id: g=53822363b3b7e8d4e6d041d43816efc6
-    Type: BaseDataVariableType
-    DataType: String
-    AccessLevel: Read
-  - Name: User
-    Id: g=74235575aa5f2088f35c6a11590f1120
-    Type: NodePointer
-    DataType: NodeId
-    AccessLevel: Read
-    Children:
-    - Name: Kind
-      Id: g=387397a1187ced3b65581cc1b7dd4330
-      Type: PropertyType
-      DataType: NodeId
-      Value: "/Types/ObjectTypes/BaseObjectType/UserType"
-  - Name: ActualLocaleId
-    Id: g=50f1a0f16e0d9a9d68dc5f64a7687a1a
-    Type: BaseVariableType
-    DataType: LocaleId
-    ReferenceType: HasProperty
-  - Name: ActualLanguage
-    Id: g=00d1d3b710a5996f3cbbadb6f14d3879
-    Type: BaseVariableType
-    DataType: LocaleId
-    ReferenceType: HasProperty
-  - Name: ActualMeasurementSystem
-    Id: g=3dbc86a9016bc653cad49c2979c7608b
-    Type: BaseVariableType
-    DataType: MeasurementSystem
-    ReferenceType: HasProperty
-  - Name: TimeZoneOffset
-    Id: g=b6dca62c882156a33e8db474949f77a4
-    Type: BaseVariableType
-    DataType: TimeZoneDataType
-    ReferenceType: HasProperty
-    AccessLevel: Read
-  - Name: Groups
-    Id: g=3b7ad68efa46d167dbaef841bee9c83a
-    Type: BaseObjectType
-  - Name: Roles
-    Id: g=819ff01db713bbe92b2ab7cb5c793a8f
-    Type: BaseObjectType
-  - Name: Rights
-    Id: g=60d21332e082b71b8d4488cdda81beda
-    Type: BaseObjectType
-  - Class: Reference
-    Target: ns=1;i=146
-    Direction: Forward
-  - Class: Reference
-    Target: ns=1;i=266
-    Direction: Forward
-  - Class: Reference
-    Target: ns=1;i=269
-    Direction: Forward
-  - Class: Reference
-    Target: ns=1;i=272
-    Direction: Forward
-  - Name: LoggedIn
-    Id: g=a6cddcad46767043d6a7dec10a91efe8
-    Type: BaseVariableType
-    DataType: Boolean
-    AccessLevel: Read
-  - Name: IdleTimeoutDuration
-    Id: g=02abf999683d981d105930b95e371a5a
-    Type: BaseDataVariableType
-    DataType: Duration
-    ModellingRule: Optional
-    Value: "0:00:00:3.0000000"
-  - Name: IdleTimeoutEnabled
-    Id: g=a3a2282f1c6c7628f10f7c673651d397
-    Type: BaseDataVariableType
-    DataType: Boolean
-    ModellingRule: Optional
-    Value: true
-  - Name: IdleTimeoutEventHandler1
-    Id: g=37220377d22b7c18291775862f488570
-    Type: EventHandler
-    Children:
-    - Name: ListenEventType
-      Id: g=4717c1dd26b78a9a37f66d34bcbb795a
-      Type: PropertyType
-      DataType: NodeId
-      Value: "/Types/EventTypes/BaseEventType/IdleTimeoutEvent"
-    - Name: MethodsToCall
-      Id: g=97193c4c0239439ab3acebb088b5cc48
-      Type: BaseObjectType
-      Children:
-      - Name: MethodContainer1
-        Id: g=da37f6b378e773ff5eaf717abb403055
-        Type: BaseObjectType
-        Children:
-        - Name: ns=2;ObjectPointer
-          Id: g=3b74b2a920fbf92f0c5dc3db5ed5fb7d
-          Type: NodePointer
-          DataType: NodeId
-          Value: "/Objects/Commands/CoreCommands"
-          Children:
-          - Name: Kind
-            Id: g=69752401db2dc7a950945a13b35e17a6
-            Type: PropertyType
-            DataType: NodeId
-            Value: "/Types/ObjectTypes/BaseObjectType"
-          - Name: DynamicLink
-            Id: g=cb1438a1c0b58d11a35669bfaaadd535
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "../../../..@NodeId"
-            Children:
-            - Name: Mode
-              Id: g=0bf257f2376008b9c0f41cf4708fdea8
-              Type: BaseVariableType
-              DataType: DynamicLinkMode
-              ModellingRule: Optional
-              Value: 2
-        - Name: ns=2;Method
-          Id: g=86c303a0ba3fc2e3954df6a695ebafac
-          Type: BaseDataVariableType
-          DataType: String
-          Value: "ChangeUser"
-        - Name: InputArguments
-          Id: g=5fa4f305ef434c2703a3e672d0f0c820
-          Type: BaseObjectType
-          Children:
-          - Name: Username
-            Id: g=1aa3a139bbb9499fe5af00ab92dcf484
-            Type: BaseDataVariableType
-            DataType: String
-            Description: {"NamespaceIndex":1,"TextId":"ChangeUserUsernameDescription"}
-            Value: "Anonymous"
-          - Name: Password
-            Id: g=5ab70086a79e83f5620afba741b60ece
-            Type: BaseDataVariableType
-            DataType: Password
-            Description: {"NamespaceIndex":1,"TextId":"ChangeUserPasswordDescription"}
-        - Name: OutputArguments
-          Id: g=8c7d78ea89161705fbec68c70f0c5d85
-          Type: BaseObjectType
-          Children:
-          - Name: Result
-            Id: g=be2022524035a9a177231eedec0c725d
-            Type: BaseDataVariableType
-            DataType: Boolean
-            Description: {"NamespaceIndex":1,"TextId":"ChangeUserResultDescription"}
-          - Name: ResultCode
-            Id: g=893bc9f82d4ba9436a592e9b6aa2b6c5
-            Type: BaseDataVariableType
-            DataType: ChangeUserResultCode
-            Description: {"NamespaceIndex":1,"TextId":"ChangeUserResultCodeDescription"}
-    - Name: EventArguments
-      Id: g=6530cdeb19b042375182fc888e2956cd
-      Type: IdleTimeoutEvent
-      Children:
-      - Name: EventId
-        Id: g=172ea32c15c973006c6ef0301e8860d1
-        Type: PropertyType
-        DataType: ByteString
-      - Name: EventType
-        Id: g=d24571254aee2ef771727e3b9ac7a40a
-        Type: PropertyType
-        DataType: NodeId
-      - Name: SourceNode
-        Id: g=363c2e80171ec5aa782e839b1ecf2b16
-        Type: PropertyType
-        DataType: NodeId
-      - Name: SourceName
-        Id: g=761973e71758c7abbb10a939b4f70de4
-        Type: PropertyType
-        DataType: String
-      - Name: Time
-        Id: g=a5ca06e1d355538e5546fbbca4b17ec3
-        Type: PropertyType
-        DataType: UtcTime
-      - Name: ReceiveTime
-        Id: g=188765488eb9a04d7a7e5f46d34d6cb5
-        Type: PropertyType
-        DataType: UtcTime
-      - Name: Message
-        Id: g=e61822b38b383996f6185e3ed143bb4e
-        Type: PropertyType
-        DataType: LocalizedText
-      - Name: Severity
-        Id: g=32b4333f88db6c99f481547419dee6ba
-        Type: PropertyType
-        DataType: UInt16

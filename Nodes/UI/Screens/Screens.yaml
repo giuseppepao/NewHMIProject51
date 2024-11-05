@@ -2752,6 +2752,7 @@ Children:
       Id: g=d03b4589d70519168c187468af391daf
       Type: NodePointer
       DataType: NodeId
+      Value: "/Objects/NewHMIProject51/Loggers/DataLogger1"
       Children:
       - Name: Kind
         Id: g=b4be42187280e5843f0362f5d26232bc
@@ -6623,6 +6624,117 @@ Children:
         Type: DynamicLink
         DataType: NodePath
         Value: "{Session}/Groups/Administrators"
+  - Name: Duration1
+    Id: g=b177a3a22c65b525f44fb946bb4e1be3
+    Type: DurationPicker
+    Children:
+    - Name: Value
+      Id: g=e383ab5a20b9a4bb8820f6d58c5330cd
+      Type: BaseDataVariableType
+      DataType: Duration
+      Children:
+      - Name: DynamicLink
+        Id: g=e97343e80697e3f4a0e28d7bf0d7ba57
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/NewHMIProject51/UI/UISession1/IdleTimeoutDuration"
+        Children:
+        - Name: Mode
+          Id: g=0c1d3da1eb1ee9d105c203d7e7f9bd86
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: LeftMargin
+      Id: g=6a0879f54aa03b78a96cc6386adf9e69
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 483.0
+    - Name: TopMargin
+      Id: g=3a74f5ae3d880a7743991067cf8e4aac
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 306.0
+  - Name: Switch4
+    Id: g=aaec73f25dcfc75edd54d3106e19895a
+    Type: Switch
+    Children:
+    - Name: Checked
+      Id: g=2df4c85673459f55a9a5e259586d2426
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Children:
+      - Name: DynamicLink
+        Id: g=d7066cd4e07c90df238d0b097d3a41b0
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/NewHMIProject51/UI/UISession1/IdleTimeoutEnabled"
+        Children:
+        - Name: Mode
+          Id: g=676a20a72eb710ef7b2ee2b031d61221
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: Width
+      Id: g=2ab0848104fc5543ac19fba1e7f7224f
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 60.0
+    - Name: LeftMargin
+      Id: g=994bbc4a25bb632d76ed2b8904b15709
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 500.0
+    - Name: TopMargin
+      Id: g=1bed79ce6f5fd94d8debd30faed13488
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 360.0
+  - Name: SpinBox1
+    Id: g=9fd2efdcf6dbd986037156b455df0661
+    Type: SpinBox
+    Children:
+    - Name: Value
+      Id: g=135e4d6a92233123001d3cd7047db9f7
+      Type: BaseDataVariableType
+      DataType: Double
+      Children:
+      - Name: DynamicLink
+        Id: g=9665f9251ba86b15c971349f93fc374d
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/NewHMIProject51/Model/Variable1"
+        Children:
+        - Name: Mode
+          Id: g=c62c9707d9c6254b33494147dc1bc6aa
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: Width
+      Id: g=04263b9b7bdb2ef3cbe021f06239f667
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 80.0
+    - Name: LeftMargin
+      Id: g=5c68896c2d14841895fbd0185ff3e482
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 504.0
+    - Name: TopMargin
+      Id: g=30f9d8bbba1ad441a7e9bda2b9706bad
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 415.0
 - Name: Traduzioni
   Id: g=eea1aa3c640ceb69cc36dcf747b40b6e
   Supertype: Screen
