@@ -41,10 +41,6 @@ Project:
    Uri: 'urn:FTOptix:CommunicationDriver'
    Module: FTOptix.CommunicationDriver
    Version: 2.1
-  11:
-   Uri: 'urn:FTOptix:ODBCStore'
-   Module: FTOptix.ODBCStore
-   Version: 1.0
   12:
    Uri: 'urn:FTOptix:SQLiteStore'
    Module: FTOptix.SQLiteStore
@@ -85,10 +81,6 @@ Project:
    Uri: 'urn:FTOptix:HMIProject:Net'
    Module: FTOptix.HMIProject.Net
    Version: 4.4
-  22:
-   Uri: 'urn:FTOptix:ODBCStore:Net'
-   Module: FTOptix.ODBCStore.Net
-   Version: 1.0
   23:
    Uri: 'urn:FTOptix:NativeUI:Net'
    Module: FTOptix.NativeUI.Net
@@ -114,14 +106,14 @@ Project:
    Module: FTOptix.Recipe.Net
    Version: 1.0
  Statistics:
-  TotalNodeCount: 3755
-  Objects: 719
+  TotalNodeCount: 3746
+  Objects: 717
   ObjectTypes: 25
-  Variables: 2990
+  Variables: 2983
   VariableTypes: 0
   DataTypes: 0
   Methods: 21
-  References: 102
+  References: 91
   ReferenceTypes: 0
   Files: 30
  Nodes:
