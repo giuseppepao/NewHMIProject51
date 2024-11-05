@@ -9,6 +9,8 @@ using FTOptix.UI;
 using FTOptix.CoreBase;
 using FTOptix.Core;
 using FTOptix.Retentivity;
+using FTOptix.OPCUAServer;
+using FTOptix.Alarm;
 #endregion
 
 public class LoginChangePasswordFormOutputMessageLogic : BaseNetLogic

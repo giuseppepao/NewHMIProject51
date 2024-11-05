@@ -1,4 +1,5 @@
 Name: Loggers
+Id: g=4bfaf29c8faeb75ae7c681708102fd75
 Type: LoggersCategoryFolder
 Children:
 - Name: DataLogger1
@@ -6,93 +7,115 @@ Children:
   Type: DataLogger
   Children:
   - Name: SamplingMode
+    Id: g=e35be43b6138d3beb1c695acd72ba95c
     Type: PropertyType
     DataType: SamplingModeEnum
     Value: 1
   - Name: Store
+    Id: g=df58d9188d9697f98ad9c8166a9d19fe
     Type: NodePointer
     DataType: NodeId
     Value: "/Objects/NewHMIProject51/DataStores/EmbeddedDatabase1"
     Children:
     - Name: Kind
+      Id: g=739e1797e942ac5685079cd6a4abfdb4
       Type: PropertyType
       DataType: NodeId
       Value: "/Types/ObjectTypes/BaseObjectType/Store"
   - Name: VariablesToLog
+    Id: g=ce961df5d60aaa9ee73093644896615f
     Type: BaseObjectType
     Children:
     - Name: Variable1
+      Id: g=3aece55b7a3efb438d258e789ba3c6ac
       Type: VariableToLog
       DataType: BaseDataType
       Children:
       - Name: LastValue
+        Id: g=ef6163e254ffc269b5152a648e214792
         Type: PropertyType
         DataType: BaseDataType
         AccessLevel: Read
       - Name: Timestamp
+        Id: g=f43492fa0344b8fb832b5b5e1badac12
         Type: PropertyType
         DataType: UtcTime
         AccessLevel: Read
       - Name: LastOperationCode
+        Id: g=9c64300433e3ae1d582599a069315816
         Type: PropertyType
         DataType: StatusCode
         AccessLevel: Read
       - Name: DynamicLink
+        Id: g=dfcdfd97ed76203317e9544857e8f245
         Type: DynamicLink
         DataType: NodePath
         Value: "../../../../Model/Variable1"
         Children:
         - Name: Mode
+          Id: g=a9665a8e6356adf7a4abc35f63b41340
           Type: BaseVariableType
           DataType: DynamicLinkMode
           Value: 2
     - Name: Variable2
+      Id: g=aa06aaf978e444b16cc3686acc822079
       Type: VariableToLog
       DataType: BaseDataType
       Children:
       - Name: LastValue
+        Id: g=9d31e5bd348ebd7a7ba516a8ab955ccc
         Type: PropertyType
         DataType: BaseDataType
         AccessLevel: Read
       - Name: Timestamp
+        Id: g=b233eb4bd4b46e4793d5a8b5942ace42
         Type: PropertyType
         DataType: UtcTime
         AccessLevel: Read
       - Name: LastOperationCode
+        Id: g=997fd9d246bf6bdcaa2edc7ed0c6eff2
         Type: PropertyType
         DataType: StatusCode
         AccessLevel: Read
       - Name: DynamicLink
+        Id: g=01815867d1271d95a17c94ec1133d2df
         Type: DynamicLink
         DataType: NodePath
         Value: "../../../../Model/Variable2"
         Children:
         - Name: Mode
+          Id: g=ca12258fa593beda7b9058fd310aa9db
           Type: BaseVariableType
           DataType: DynamicLinkMode
           Value: 2
     - Name: Variable3
+      Id: g=1b7812f0c0a2d6bea99dcdb61fd44996
       Type: VariableToLog
       DataType: BaseDataType
       Children:
       - Name: LastValue
+        Id: g=cd58c633d20ae52eabe03b05b137ed62
         Type: PropertyType
         DataType: BaseDataType
         AccessLevel: Read
       - Name: Timestamp
+        Id: g=1ef2ab145673dab56e5805663d9f7697
         Type: PropertyType
         DataType: UtcTime
         AccessLevel: Read
       - Name: LastOperationCode
+        Id: g=5de96fc53639b93fc61ca011e925745d
         Type: PropertyType
         DataType: StatusCode
         AccessLevel: Read
       - Name: DynamicLink
+        Id: g=74bbd4a2d686ea018064a3965993dce9
         Type: DynamicLink
         DataType: NodePath
         Value: "../../../../Model/Variable3"
         Children:
         - Name: Mode
+          Id: g=e6238636e2b8bf1c9511ec4240e0ac42
           Type: BaseVariableType
           DataType: DynamicLinkMode
           Value: 2
@@ -100,10 +123,12 @@ Children:
     Target: ns=8;i=21
     Direction: Forward
   - Name: LogLocalTime
+    Id: g=0ed5c5d0ff757642be3393750b6e0a67
     Type: PropertyType
     DataType: Boolean
     Value: true
   - Name: SamplingPeriod
+    Id: g=4affa270bc6750f19fb7f540d60cd7c5
     Type: PropertyType
     DataType: Duration
     Value: "0:00:00:1.0000000"
@@ -113,67 +138,83 @@ Children:
   WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
   Children:
   - Name: CSVPath
+    Id: g=5e4838fa9ffb90d4b6f56f7b46f588fd
     Type: BaseDataVariableType
     DataType: AbsoluteResourceUri
     Value: "file:///C:/temp/datalogger.csv"
   - Name: FieldDelimiter
+    Id: g=6723ef9cfe3ef077d99523c9a6bd3586
     Type: BaseDataVariableType
     DataType: String
     Value: ","
   - Name: Table
+    Id: g=62757a78f8553c8bc7c8cb9af066a1e2
     Type: NodePointer
     DataType: NodeId
     Value: "/Objects/NewHMIProject51/DataStores/EmbeddedDatabase1/Tables/DataLogger1"
     Children:
     - Name: Kind
+      Id: g=9f88e66d88d3f8a02d9aff2bd5e40f47
       Type: PropertyType
       DataType: NodeId
       Value: "/Types/ObjectTypes/BaseObjectType/Table"
   - Class: Method
     Name: Export
+    Id: g=f22e1dbc80fc406c3820e6f45f726ba9
   - Name: Query
+    Id: g=3ee900bad5a8f5d99e34a357149428da
     Type: BaseDataVariableType
     DataType: String
     Value: "0"
     Children:
     - Name: StringFormatter1
+      Id: g=4f770d6edec7a566bb7bd0df992835d3
       Type: StringFormatter
       Children:
       - Name: Format
+        Id: g=b01f5ea102e5cc6a2f092104ad2b670e
         Type: BaseDataVariableType
         DataType: LocalizedText
         ReferenceType: HasParameter
         Value: {"LocaleId":"en-US","Text":"Timestamp BETWEEN {1:sql_literal} AND {2:sql_literal}"}
       - Name: Source1
+        Id: g=2b138a5eee8acbebf49531a6bdd95082
         Type: BaseDataVariableType
         DataType: BaseDataType
         ReferenceType: HasSource
         Children:
         - Name: DynamicLink
+          Id: g=a4f92aabb6f06b7e41c0648645aed2fd
           Type: DynamicLink
           DataType: NodePath
           Value: "../../../From"
       - Name: Source2
+        Id: g=ae6b83b8a02ca6c458e0365b501a56c4
         Type: BaseDataVariableType
         DataType: BaseDataType
         ReferenceType: HasSource
         Children:
         - Name: DynamicLink
+          Id: g=adc0d95a922a7157c5500187370f921a
           Type: DynamicLink
           DataType: NodePath
           Value: "../../../To"
   - Name: From
+    Id: g=da47c4903d8535fe9ea19a2673c3540d
     Type: BaseDataVariableType
     DataType: DateTime
     Value: "2024-01-01T00:00:00.0000000"
   - Name: To
+    Id: g=8a4fa6a1d11b0d1882d366a62d084211
     Type: BaseDataVariableType
     DataType: DateTime
     Value: "2025-01-01T00:00:00.0000000"
   - Name: WrapFields
+    Id: g=5a729e24672a397a28c9234851b95943
     Type: BaseDataVariableType
     DataType: Boolean
   - Name: ns=4;LibraryReference
+    Id: g=fb663b558c85e32bd0b08622e51a89f0
     Type: ObjectLibraryReference
     DataType: ObjectLibraryReferenceDataType
     Value: 

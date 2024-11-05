@@ -7,6 +7,8 @@ using OpcUa = UAManagedCore.OpcUa;
 using FTOptix.NetLogic;
 using FTOptix.Core;
 using FTOptix.UI;
+using FTOptix.OPCUAServer;
+using FTOptix.Alarm;
 #endregion
 
 public class LoginButtonLogic : BaseNetLogic

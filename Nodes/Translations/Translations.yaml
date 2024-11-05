@@ -1,4 +1,5 @@
 Name: Translations
+Id: g=484e05fb3dd8a93564470db627dae5ab
 Type: TranslationsCategoryFolder
 Children:
 - Name: LocalizationDictionary1
@@ -98,38 +99,48 @@ Children:
     ]
    }
 - Name: ImportAndExportTranslations
+  Id: g=2015cea4d8150939052a3ae969fd40c4
   Type: NetLogic
   WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
   Children:
   - Name: BehaviourStartPriority
+    Id: g=cc07d89ef3c684615fa160bd5e492140
     Type: BehaviourStartPriorityVariableType
     DataType: Byte
     Value: 180
   - Name: CSVPath
+    Id: g=546e2953888b4bf852245d61a0b8549d
     Type: BaseDataVariableType
     DataType: AbsoluteResourceUri
     Value: "file:///C:/temp/traduzioni.csv"
   - Class: Method
     Name: ExportTranslations
+    Id: g=a67700183145c2f2603949714077343c
   - Class: Method
     Name: ImportTranslations
+    Id: g=43af2f6397fa33f42cc01b438b28aa32
   - Name: CharacterSeparator
+    Id: g=4544fb9bb47ceca61fcb5465ffc2cbbe
     Type: BaseDataVariableType
     DataType: String
     Value: ","
   - Name: WrapFields
+    Id: g=6d3dfbdf0e445a6263cb78bfcfca8ad1
     Type: BaseDataVariableType
     DataType: Boolean
   - Name: LocalizationDictionary
+    Id: g=e2dd848582217598e51d2d03a42a5a3d
     Type: NodePointer
     DataType: NodeId
     Value: "/Objects/NewHMIProject51/Translations/LocalizationDictionary1"
     Children:
     - Name: Kind
+      Id: g=cda9b90b657bdceea12801b311b1a57f
       Type: PropertyType
       DataType: NodeId
       Value: "/Types/VariableTypes/BaseVariableType/LocalizationDictionary"
   - Name: ns=4;LibraryReference
+    Id: g=522053eb017cf006609d0fd44b8d92bd
     Type: ObjectLibraryReference
     DataType: ObjectLibraryReferenceDataType
     Value: 

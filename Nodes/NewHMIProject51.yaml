@@ -1,59 +1,74 @@
 Name: NewHMIProject51
+Id: g=a6df577e1f2faf3352dcbf631c6e3ced
 Type: ProjectFolder
 Children:
 - Name: Localization
+  Id: g=ad176387734388829499e62957bd12aa
   Type: PropertyGroup
   Children:
   - Name: Locales
+    Id: g=75ec3389fc7988db30a4c1c22fedbafb
     Type: BaseDataVariableType
     DataType: LocaleId
     ValueRank: OneDimension
     ArrayDimensions: [0]
     Value: ["en-US","it-IT"]
   - Name: LocaleFallbackList
+    Id: g=88ab0f434f2a329fc3b9dff46b7821b7
     Type: BaseDataVariableType
     DataType: LocaleId
     ValueRank: OneDimension
     ArrayDimensions: [0]
     Value: ["en-US"]
   - Name: MeasurementSystemMap
+    Id: g=eaf253e7a4c89ca9617b2ef217aed3ba
     Type: BaseDataVariableType
     DataType: MeasurementSystemMapItem
     ValueRank: OneDimension
     ArrayDimensions: [0]
 - Name: Authentication
+  Id: g=25a06f976d13556ba74a4edea3c31a75
   Type: PropertyGroup
   Children:
   - Name: DefaultUserFolder
+    Id: g=a207e314f5ad6b34673377a4c3ab8cf1
     Type: NodePointer
     DataType: NodeId
     Value: "/Objects/NewHMIProject51/Security/Users"
     Children:
     - Name: Kind
+      Id: g=b0dc364389dceb5bd2309ef5dc7eb22f
       Type: PropertyType
       DataType: NodeId
       Value: "/Types/ObjectTypes/BaseObjectType/FolderType"
   - Name: AuthenticationMode
+    Id: g=4f5878ca3400f2b08928b226eee6cf4a
     Type: BaseDataVariableType
     DataType: AuthenticationMode
 - Name: PasswordPolicy
+  Id: g=672614472b956a323e38d3c5ede8aa62
   Type: PasswordPolicy
   Children:
   - Name: MaximumPasswordAge
+    Id: g=cb67cf474c1e646c644031badd914822
     Type: BaseDataVariableType
     DataType: UInt16
   - Name: EnforcePasswordHistory
+    Id: g=e5f2cd8c3b892ba753c53e4b5ada535d
     Type: BaseDataVariableType
     DataType: Byte
     Value: 1
   - Name: MinimumPasswordAge
+    Id: g=16ccdcd0c126605019569f801f396716
     Type: BaseDataVariableType
     DataType: UInt16
   - Name: MinimumPasswordLength
+    Id: g=e0627e160797f510310e2d2b6e39992d
     Type: BaseDataVariableType
     DataType: Byte
     Value: 4
 - Name: AlarmConfiguration
+  Id: g=57b74035dbd8fdd906d8ee4391ea999f
   Type: PropertyGroup
 - File: UI/UI.yaml
 - File: Model/Model.yaml
@@ -71,11 +86,13 @@ Children:
 - File: Translations/Translations.yaml
 - File: Retentivity/Retentivity.yaml
 - Name: RecipeSchema1
+  Id: g=3c4c3c6cab5a78f43e71bd09d6f77470
   Type: Alias
   DataType: NodeId
   Value: "/Objects/NewHMIProject51/Recipes/RecipeSchema1/EditModel"
   Children:
   - Name: Kind
+    Id: g=e6d2b181b1154967a11cc142c41c7295
     Type: PropertyType
     DataType: NodeId
     Value: "/Objects/NewHMIProject51/Recipes/RecipeSchema1/EditModel"

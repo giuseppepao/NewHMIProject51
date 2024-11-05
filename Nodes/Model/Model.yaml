@@ -3,48 +3,70 @@ Id: g=50f4150fccc1c794aaf063a5677cf556
 Type: ModelCategoryFolder
 Children:
 - Name: Variable1
+  Id: g=cfcdf05995c76091e7190edf5215536a
   Type: BaseDataVariableType
   DataType: Int32
 - Name: Variable2
+  Id: g=ddd0cb965e4ddad1ee82bc6163119d99
   Type: BaseDataVariableType
   DataType: Int32
 - Name: Variable3
+  Id: g=e30f418f4bbb32dbe361736b875239d0
   Type: BaseDataVariableType
   DataType: Int32
 - Name: SP
+  Id: g=b990a4ab6163b1ae6d31b98ca772af7d
   Type: BaseDataVariableType
   DataType: Int32
 - File: Ricetta/Ricetta.yaml
 - Name: AnalogVariable1
+  Id: g=b4ab2ba7b074975693dffee629f21b2d
   Type: AnalogItemType
   DataType: Float
   Children:
   - Name: EURange
+    Id: g=a8bd11962e8780036a2d5b20655b0701
     Type: RangeType
     DataType: Range
     Children:
     - Name: Low
+      Id: g=64b1262ddfe250dedb8e4279a88010ee
       Type: BaseVariableType
       DataType: Double
       ReferenceType: HasProperty
     - Name: High
+      Id: g=196d01965313a6ddf0d293509e111446
       Type: BaseVariableType
       DataType: Double
       ReferenceType: HasProperty
   - Name: EngineeringUnits
+    Id: g=4dbf36c8853eb0f481dd82f385596de4
     Type: EUInformationType
     DataType: EUInformation
     Children:
     - Name: UnitId
+      Id: g=e604a1336f350ad65f2db07148915f79
       Type: BaseVariableType
       DataType: Int32
       ReferenceType: HasProperty
       Value: 4408652
     - Name: DisplayName
+      Id: g=fd408f0bca18b6a76ef23e4a54c70f77
       Type: BaseVariableType
       DataType: LocalizedText
       ReferenceType: HasProperty
     - Name: Description
+      Id: g=2c2c1ee4a7306db264818efd7ec88a7c
       Type: BaseVariableType
       DataType: LocalizedText
       ReferenceType: HasProperty
+- Name: AllarmiPLC
+  Id: g=7428f16a4323045d4437e3007524ec90
+  Type: BaseDataVariableType
+  DataType: Boolean
+  ValueRank: OneDimension
+  ArrayDimensions: [10]
+- Name: Variable4
+  Id: g=c2bed1f513ed76dd8c8c6a182fdc6039
+  Type: BaseDataVariableType
+  DataType: Int32

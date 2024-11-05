@@ -113,15 +113,31 @@ Project:
    Uri: 'urn:FTOptix:Recipe:Net'
    Module: FTOptix.Recipe.Net
    Version: 1.0
+  29:
+   Uri: 'urn:FTOptix:OPCUAServer'
+   Module: FTOptix.OPCUAServer
+   Version: 1.1
+  30:
+   Uri: 'urn:FTOptix:OPCUAServer:Net'
+   Module: FTOptix.OPCUAServer.Net
+   Version: 1.1
+  31:
+   Uri: 'urn:FTOptix:Alarm'
+   Module: FTOptix.Alarm
+   Version: 4.0
+  32:
+   Uri: 'urn:FTOptix:Alarm:Net'
+   Module: FTOptix.Alarm.Net
+   Version: 1.2
  Statistics:
-  TotalNodeCount: 3719
-  Objects: 712
-  ObjectTypes: 25
-  Variables: 2961
+  TotalNodeCount: 3851
+  Objects: 737
+  ObjectTypes: 26
+  Variables: 3064
   VariableTypes: 0
   DataTypes: 0
-  Methods: 21
-  References: 103
+  Methods: 24
+  References: 163
   ReferenceTypes: 0
   Files: 30
  Nodes:

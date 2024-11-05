@@ -1,4 +1,5 @@
 Name: LoginForm
+Id: g=14d25bb902239328913bd037cb22cd25
 Type: FolderType
 Children:
 - Name: LoginForm
@@ -7,43 +8,52 @@ Children:
   ReferenceType: HasComponent
   Children:
   - Name: Panel
+    Id: g=34d314e0e0f2e3d43dc586411d37e73b
     Type: NodePointer
     DataType: NodeId
     Children:
     - Name: Kind
+      Id: g=9a528c993b09d8d5c4cdd9d186d83b86
       Type: PropertyType
       DataType: NodeId
       Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
     - Name: ConditionalConverter1
+      Id: g=873da20ade68a4f825cf9e0057b3548c
       Type: ConditionalConverter
       Children:
       - Name: Condition
+        Id: g=4bad664517be0afb840a2bcf4a243c80
         Type: BaseDataVariableType
         DataType: Boolean
         ReferenceType: HasSource
         Children:
         - Name: DynamicLink
+          Id: g=73dfbad78a91dfad6920245a6cc66cd1
           Type: DynamicLink
           DataType: NodePath
           Value: "{Session}/LoggedIn"
       - Name: TrueValue
+        Id: g=03a0e7d93a5063aa853059398b5a6c7f
         Type: BaseDataVariableType
         DataType: NodeId
         ReferenceType: HasParameter
         ModellingRule: Optional
         Value: "/Objects/NewHMIProject51/UI/LoginForm/LoginFormComponents/Logout"
       - Name: FalseValue
+        Id: g=5722781ce2d861b947443bfcc51b8d75
         Type: BaseDataVariableType
         DataType: NodeId
         ReferenceType: HasParameter
         ModellingRule: Optional
         Value: "/Objects/NewHMIProject51/UI/LoginForm/LoginFormComponents/Login"
   - Name: CurrentPanel
+    Id: g=549ca2d26e0df5aac1f4f4c98a56eb88
     Type: NodePointer
     DataType: NodeId
     AccessLevel: Read
     Children:
     - Name: Kind
+      Id: g=6458a872b49241c55d9244ccd4c06902
       Type: PropertyType
       DataType: NodeId
       Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item"
@@ -51,34 +61,41 @@ Children:
     Target: ns=3;i=478
     Direction: Forward
   - Name: Width
+    Id: g=d1356f0a9f68bed5f852ffd06c2c5647
     Type: BaseVariableType
     DataType: Size
     ModellingRule: Optional
     Value: 300.0
   - Name: Height
+    Id: g=da9b536f2bc84b4106919bd0c5ad4740
     Type: BaseVariableType
     DataType: Size
     ModellingRule: Optional
     Value: 300.0
   - Name: Users
+    Id: g=e6380cd6d1c5ec5d133cf87ae1aeed08
     Type: NodePointer
     DataType: NodeId
     Children:
     - Name: Kind
+      Id: g=8204caa8c4d84fcebacf3f572048d830
       Type: PropertyType
       DataType: NodeId
       Value: "/Types/ObjectTypes/BaseObjectType/FolderType"
   - Name: PanelAliasNode
+    Id: g=e0ed2e2c54fbd5a8173b29ed2aa51a4c
     Type: BaseDataVariableType
     DataType: NodeId
     ValueRank: ScalarOrOneDimension
     Children:
     - Name: DynamicLink
+      Id: g=696d9916e867cff99853c279353fca1f
       Type: DynamicLink
       DataType: NodePath
       Value: "../Users@NodeId"
 - File: LoginFormComponents/LoginFormComponents.yaml
 - Name: ns=4;LibraryReference
+  Id: g=dcdcf27c55c3129180ed4a459ace84b5
   Type: ObjectLibraryReference
   DataType: ObjectLibraryReferenceDataType
   Value: 

@@ -11,6 +11,8 @@ using FTOptix.Store;
 using FTOptix.SQLiteStore;
 using FTOptix.WebUI;
 using FTOptix.Recipe;
+using FTOptix.OPCUAServer;
+using FTOptix.Alarm;
 using OpcUa = UAManagedCore.OpcUa;
 
 #endregion

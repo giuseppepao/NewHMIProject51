@@ -1,4 +1,5 @@
 Name: DataStores
+Id: g=bbc45eee288f59c61bf790c499bea11b
 Type: DataStoresCategoryFolder
 Children:
 - Name: EmbeddedDatabase1
@@ -6,6 +7,7 @@ Children:
   Type: SQLiteStore
   Children:
   - Name: Tables
+    Id: g=ecadde52f114552b966dd61cd06a2ac5
     Type: BaseObjectType
     Children:
     - Name: DataLogger1
@@ -25,24 +27,31 @@ Children:
         Target: ns=9;i=20
         Direction: Forward
       - Name: Columns
+        Id: g=a504289f03b657bb4cc5531bbe8ed7be
         Type: BaseObjectType
         Children:
         - Name: Timestamp
+          Id: g=9c437a9836366717cde7727ce8dd45d3
           Type: StoreColumn
           DataType: UtcTime
         - Name: LocalTimestamp
+          Id: g=649e93be4f0a5e18fdc4ce47a36f7bb0
           Type: StoreColumn
           DataType: DateTime
         - Name: Variable1
+          Id: g=93c53e0488d20db4106964952cbddfe4
           Type: StoreColumn
           DataType: Int32
         - Name: Variable2
+          Id: g=7267b9b2bc362684e0a897a2da5b8b20
           Type: StoreColumn
           DataType: Int32
         - Name: Variable3
+          Id: g=9f13997ea4b43d2a4217940c5eee0641
           Type: StoreColumn
           DataType: Int32
     - Name: RecipeSchema1
+      Id: g=6c6fa1343d420bffd24c95ae6989a911
       Type: SQLiteStoreTable
       Children:
       - Class: Reference
@@ -58,18 +67,23 @@ Children:
         Target: ns=9;i=20
         Direction: Forward
       - Name: Columns
+        Id: g=e98ee23482e7666f251283d278480f41
         Type: BaseObjectType
         Children:
         - Name: Name
+          Id: g=6ce46e36050d9d78b619cbe116cb0fbb
           Type: StoreColumn
           DataType: String
         - Name: /Ricetta/ingrediente1
+          Id: g=3065b33a0563429615cca813b0fbec99
           Type: StoreColumn
           DataType: Int32
         - Name: /Ricetta/ingrediente2
+          Id: g=d14c12709041130597a705ae65dbc0f5
           Type: StoreColumn
           DataType: Int32
         - Name: /Ricetta/ingrediente3
+          Id: g=9e8b7c19121f0a883d01e330b78ac194
           Type: StoreColumn
           DataType: Boolean
   - Class: Reference
@@ -79,20 +93,24 @@ Children:
     Target: ns=12;i=33
     Direction: Forward
   - Name: MaxColumnNameLength
+    Id: g=1f523274c4f8697477373f683abb9e93
     Type: BaseDataVariableType
     DataType: UInt32
     AccessLevel: Read
   - Name: MaxColumnCount
+    Id: g=a6c8adea1d995a686b7fff70fcc2eed7
     Type: BaseDataVariableType
     DataType: UInt32
     AccessLevel: Read
   - Name: DataTypeCompatibilityMap
+    Id: g=32e0593cc0d1dd326e8a85c7cf399f17
     Type: BaseDataVariableType
     DataType: NodeId
     AccessLevel: Read
     ValueRank: OneOrMoreDimensions
     ArrayDimensions: [0,0]
   - Name: Status
+    Id: g=b43ac457180b7b7fcca7eef350b3b980
     Type: PropertyType
     DataType: StoreStatus
     AccessLevel: Read
@@ -131,9 +149,11 @@ Children:
     Target: ns=9;i=59
     Direction: Forward
 - Name: EmbeddedDatabase2
+  Id: g=3a0a6062e761939a092e76a5c5d8b9d1
   Type: SQLiteStore
   Children:
   - Name: Tables
+    Id: g=6124f79382e5f8aebc427308f501cdec
     Type: BaseObjectType
   - Class: Reference
     Target: ns=12;i=30
@@ -142,20 +162,24 @@ Children:
     Target: ns=12;i=33
     Direction: Forward
   - Name: MaxColumnNameLength
+    Id: g=c2ade619f43b5b739cdf0bbd58e95b0d
     Type: BaseDataVariableType
     DataType: UInt32
     AccessLevel: Read
   - Name: MaxColumnCount
+    Id: g=5f64a73dca9102e8d389f03ca3fba3b5
     Type: BaseDataVariableType
     DataType: UInt32
     AccessLevel: Read
   - Name: DataTypeCompatibilityMap
+    Id: g=b68c7dd30b767883a1fa5664c4138046
     Type: BaseDataVariableType
     DataType: NodeId
     AccessLevel: Read
     ValueRank: OneOrMoreDimensions
     ArrayDimensions: [0,0]
   - Name: Status
+    Id: g=de48f8b5deaf98279a7c23a50df7602c
     Type: PropertyType
     DataType: StoreStatus
     AccessLevel: Read
@@ -194,35 +218,44 @@ Children:
     Target: ns=9;i=59
     Direction: Forward
 - Name: ODBCDatabase1
+  Id: g=b3de786802a91b457818e6f1a1ccd5b8
   Type: ODBCStore
   Children:
   - Name: Tables
+    Id: g=c7e6e86c7f48ea0c73ea11e300b5f6da
     Type: BaseObjectType
   - Name: Type
+    Id: g=72a0d1310d56f1768a5422e4dd825910
     Type: PropertyType
     DataType: DBMSType
     Value: 2
   - Name: Username
+    Id: g=3ced31114b7a4963924632dfa032ca00
     Type: PropertyType
     DataType: String
   - Name: Password
+    Id: g=60dec3533db08db77468be9ede3c7876
     Type: PropertyType
     DataType: Password
   - Name: MaxColumnNameLength
+    Id: g=f2b812f065c594e88d7e9dc5031a76da
     Type: BaseDataVariableType
     DataType: UInt32
     AccessLevel: Read
   - Name: MaxColumnCount
+    Id: g=f30bf7a1cd0f531406ff71168181a236
     Type: BaseDataVariableType
     DataType: UInt32
     AccessLevel: Read
   - Name: DataTypeCompatibilityMap
+    Id: g=1cba086e47bdedefa75932134c52b564
     Type: BaseDataVariableType
     DataType: NodeId
     AccessLevel: Read
     ValueRank: OneOrMoreDimensions
     ArrayDimensions: [0,0]
   - Name: Status
+    Id: g=370cb075f504d665c611097c782eb59e
     Type: PropertyType
     DataType: StoreStatus
     AccessLevel: Read

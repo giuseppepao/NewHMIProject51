@@ -1,4 +1,5 @@
 Name: Recipes
+Id: g=fb3292bb54407c4adddfa592abd8c568
 Type: RecipesCategoryFolder
 Children:
 - Name: RecipeSchema1
@@ -6,18 +7,23 @@ Children:
   Type: RecipeSchema
   Children:
   - Name: Root
+    Id: g=b7f6d6faa25a192d2168bab52463b14d
     Type: BaseObjectType
     Children:
     - Name: Ricetta
+      Id: g=e9c2ad9fbf1cbd0ddf30272c7838a6f8
       Type: BaseObjectType
       Children:
       - Name: ingrediente1
+        Id: g=243709eb4297ef90a667fe8dd4569577
         Type: BaseDataVariableType
         DataType: Int32
       - Name: ingrediente2
+        Id: g=3bc58142f0701660c9b62bbda4e24d65
         Type: BaseDataVariableType
         DataType: Int32
       - Name: ingrediente3
+        Id: g=d83eb28ef16ed6d304bb96a125e71419
         Type: BaseDataVariableType
         DataType: Boolean
   - Class: Reference
@@ -57,20 +63,24 @@ Children:
     Target: ns=27;i=60
     Direction: Forward
   - Name: Store
+    Id: g=81c611f8b1a90e581c5fe8548256d6e1
     Type: NodePointer
     DataType: NodeId
     Value: "/Objects/NewHMIProject51/DataStores/EmbeddedDatabase1"
     Children:
     - Name: Kind
+      Id: g=59c4ad649e63dc0877d135857961ef64
       Type: PropertyType
       DataType: NodeId
       Value: "/Types/ObjectTypes/BaseObjectType/Store"
   - Name: TargetNode
+    Id: g=4f27b988a2f46cdd3a7f906cfdcfc8fd
     Type: NodePointer
     DataType: NodeId
     Value: "/Objects/NewHMIProject51/Model"
     Children:
     - Name: Kind
+      Id: g=4758300d8f461637cd1c7310f22afa6f
       Type: PropertyType
       DataType: NodeId
   - Name: EditModel
@@ -78,14 +88,18 @@ Children:
     Type: BaseObjectType
     Children:
     - Name: Ricetta
+      Id: g=5a20e80aef563bd61654dfde05d6663b
       Type: BaseObjectType
       Children:
       - Name: ingrediente1
+        Id: g=7a18702a36ee508732c0e6b6a2f1194a
         Type: BaseDataVariableType
         DataType: Int32
       - Name: ingrediente2
+        Id: g=e33294816d1936ae54410af48a683309
         Type: BaseDataVariableType
         DataType: Int32
       - Name: ingrediente3
+        Id: g=3c6c7517e2fe90b07eea1770916831a6
         Type: BaseDataVariableType
         DataType: Boolean

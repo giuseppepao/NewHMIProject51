@@ -1,56 +1,71 @@
 Name: Retentivity
+Id: g=3afd02974eb1f336fb1cd1e9cd079e17
 Type: RetentivityCategoryFolder
 Children:
 - Name: SecurityRetentivityStorage
+  Id: g=da2d3e6f638febf46862b5063c153893
   Type: RetentivityStorage
   Children:
   - Name: Nodes
+    Id: g=914c6a02bca4623adda34b18906cbdd7
     Type: BaseObjectType
     Children:
     - Name: Node1
+      Id: g=9c17dcfd7ae23720651d0fdf77506828
       Type: NodePointer
       DataType: NodeId
       Value: "/Objects/NewHMIProject51/Security"
       Children:
       - Name: Kind
+        Id: g=fa52639c1eb3e27628f8acc5cf167b20
         Type: PropertyType
         DataType: NodeId
       - Name: NodeClass
+        Id: g=f1ed16002988e6a9227a0aea6c2cac52
         Type: PropertyType
         DataType: NodePointerNodeClass
         Value: 2
   - Name: WriteDelay
+    Id: g=5261995a09ae3a9b93dc928ffe61821e
     Type: BaseDataVariableType
     DataType: Duration
     ReferenceType: HasProperty
   - Name: DeltaObserverEnabled
+    Id: g=2c4e58844a34dc99dca8bce12a24a6f7
     Type: BaseDataVariableType
     DataType: Boolean
     ReferenceType: HasProperty
     Value: true
 - Name: AlarmsRetentivityStorage
+  Id: g=baedfa6fec677b3f40f5e67c768e1d39
   Type: RetentivityStorage
   Children:
   - Name: Nodes
+    Id: g=28181d22c63eb1a8b56fb6e45cfa7821
     Type: BaseObjectType
     Children:
     - Name: Node1
+      Id: g=6e8fca17d463a5369360d387aad97db1
       Type: NodePointer
       DataType: NodeId
       Value: "/Objects/NewHMIProject51/Alarms"
       Children:
       - Name: Kind
+        Id: g=0f6114d9e58c51cb3efe298f32762e59
         Type: PropertyType
         DataType: NodeId
       - Name: NodeClass
+        Id: g=951e501deb1852999f5e1794315d04a9
         Type: PropertyType
         DataType: NodePointerNodeClass
         Value: 2
   - Name: WriteDelay
+    Id: g=91260a9c23abfa4b0c7be661098d1ed6
     Type: BaseDataVariableType
     DataType: Duration
     ReferenceType: HasProperty
   - Name: DeltaObserverEnabled
+    Id: g=9c759ba7670fdada521f9310abef3923
     Type: BaseDataVariableType
     DataType: Boolean
     ReferenceType: HasProperty

@@ -1,55 +1,72 @@
 Name: NetLogic
+Id: g=e9b846c8147e4e27c2723a267b10a889
 Type: NetLogicCategoryFolder
 Children:
 - Name: ClockLogic
+  Id: g=436aa0ce29d7d58f2e0335cfa7a395a6
   Type: NetLogic
   WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
   Children:
   - Name: Time
+    Id: g=041d8f45b76f11f42fc72e58f215d140
     Type: BaseDataVariableType
     DataType: DateTime
     Children:
     - Name: Year
+      Id: g=09dd34781d114673549e54d69300562d
       Type: BaseDataVariableType
       DataType: Int32
     - Name: Month
+      Id: g=daf38627c0badca57b3614b05f3b1064
       Type: BaseDataVariableType
       DataType: Int32
     - Name: Day
+      Id: g=276db3c85a62ebf358cbf5f727a30905
       Type: BaseDataVariableType
       DataType: Int32
     - Name: Hour
+      Id: g=2a12eee0d1a1dc9258fbe58ee0794bed
       Type: BaseDataVariableType
       DataType: Int32
     - Name: Minute
+      Id: g=0f935f2a928d9e2fa0f6b9d4ba37d0fb
       Type: BaseDataVariableType
       DataType: Int32
     - Name: Second
+      Id: g=ebe5c9e5d41435224b88d03303f5ed5c
       Type: BaseDataVariableType
       DataType: Int32
   - Name: UTCTime
+    Id: g=326812a0f1a62cc76874e0c8711121c4
     Type: BaseDataVariableType
     DataType: DateTime
     Children:
     - Name: Year
+      Id: g=ac95c126b260e87b74e23cdb7cf14b72
       Type: BaseDataVariableType
       DataType: Int32
     - Name: Month
+      Id: g=7b74819ad7e2760a8778103c426e490a
       Type: BaseDataVariableType
       DataType: Int32
     - Name: Day
+      Id: g=c11278c75624bcb1aec886e72f34c86f
       Type: BaseDataVariableType
       DataType: Int32
     - Name: Hour
+      Id: g=9c520fa86b7898e548e272cba545ae6a
       Type: BaseDataVariableType
       DataType: Int32
     - Name: Minute
+      Id: g=7cc102e2b34b2706936dce7ae65e1e44
       Type: BaseDataVariableType
       DataType: Int32
     - Name: Second
+      Id: g=e808c4a6fb079898c78f41e1a654f31b
       Type: BaseDataVariableType
       DataType: Int32
   - Name: ns=4;LibraryReference
+    Id: g=1de083a529998d1b1c0882ee2bcc24da
     Type: ObjectLibraryReference
     DataType: ObjectLibraryReferenceDataType
     Value: 
@@ -65,3 +82,39 @@ Children:
        "highestIgnoredVersion": 0
       }
      }
+- Name: DesignTimeNetLogic1
+  Id: g=849eb8f71850aa97f0c9eee9c490d472
+  Type: NetLogic
+  Children:
+  - Name: BehaviourStartPriority
+    Id: g=6c4a263186028b85896587ff025ff769
+    Type: BehaviourStartPriorityVariableType
+    DataType: Byte
+    Value: 180
+  - Class: Method
+    Name: Test
+    Id: g=97656bf38cffcba859b97fe98cff39f9
+  - Class: Method
+    Name: CreaAllarmi
+    Id: g=e12b78acefaed7775e8502891b4b3fd1
+  - Name: NumeroAllarmi
+    Id: g=f79b3ba77ca003cb31dce152566ed11d
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 10
+- Name: RuntimeNetLogic1
+  Id: g=8c74e53b23ebf8eaa87a5d85dee2ff35
+  Type: NetLogic
+  Children:
+  - Class: Method
+    Name: miomessaggio
+    Id: g=b420eb435a4d0add2cb987ba3b1c7c2a
+    Children:
+    - Name: ns=0;InputArguments
+      Id: g=e5d4295f4a544a5de4bae7951798227f
+      Type: BaseVariableType
+      DataType: Argument
+      ReferenceType: HasProperty
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [{"TypeId":{"Id":296},"Body":{"Name":"testLog","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]

@@ -1,28 +1,36 @@
 Name: ModbusDriver1
+Id: g=57a34392ce42099b4eab9b0dc98f358f
 Type: ModbusDriver
 Children:
 - Name: Protocol
+  Id: g=e2f897a58ce7373c1fe963ceb08c42de
   Type: BaseDataVariableType
   DataType: ModbusProtocol
 - Name: SerialPort
+  Id: g=5c178284d02d673cb68e2efbb4e57237
   Type: BaseDataVariableType
   DataType: String
   Value: "COM1"
 - Name: Baudrate
+  Id: g=5454e6105f547b227dca317556160cf5
   Type: BaseDataVariableType
   DataType: UInt32
   Value: 9600
 - Name: DataSize
+  Id: g=3b0eb887bb756b7b26a051ff0e9feee0
   Type: BaseDataVariableType
   DataType: Byte
   Value: 8
 - Name: Parity
+  Id: g=d6ceb68df4e7ac64cd02a8aa671a264c
   Type: BaseDataVariableType
   DataType: Parity
 - Name: StopBits
+  Id: g=ad5a178d27e62b7cf3c45947f8fc246d
   Type: BaseDataVariableType
   DataType: StopBits
 - Name: FlowControl
+  Id: g=bf5d40aefb59b077a6847e04bc8f4ab6
   Type: BaseDataVariableType
   DataType: FlowControl
 - File: ModbusStation1/ModbusStation1.yaml
