@@ -1,0 +1,14 @@
+Name: Tags
+Type: FolderType
+Children:
+- Name: ModbusTag1
+  Type: ModbusTag
+  DataType: Int32
+- Name: ModbusTag2
+  Type: ModbusTag
+  DataType: Int32
+  Children:
+  - Name: NumRegister
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 2

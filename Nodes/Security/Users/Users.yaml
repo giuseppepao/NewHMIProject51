@@ -1,0 +1,21 @@
+Name: Users
+Id: g=8cdfe95c558e909385d4fe7ddc9a2655
+Type: UsersCategoryFolder
+Children:
+- Name: Operatore1
+  Id: g=69011f0bcb7b7fc55a391fb15a31bc62
+  Type: UserType
+  Children:
+  - Class: Reference
+    Type: HasGroup
+    Target: g=463481e182ba278ebd200b174ac048f1
+- Name: Administrator
+  Id: g=ed5e08cf2f36d5f2b6c8c3676c947d2c
+  Type: UserType
+  Children:
+  - Class: Reference
+    Type: HasGroup
+    Target: g=463481e182ba278ebd200b174ac048f1
+  - Class: Reference
+    Type: HasGroup
+    Target: g=9a1a43ccd02a141978603a657eb5c972

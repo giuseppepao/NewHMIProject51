@@ -1,0 +1,15 @@
+Name: Ricetta
+Type: FolderType
+Children:
+- Name: ingrediente1
+  Id: g=44cf8edf699575525b60390c2b27af5f
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: ingrediente2
+  Id: g=2788ea7875db1e22d693cd6952ba8d47
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: ingrediente3
+  Id: g=46d4443c75d61d31624aeab0f3272641
+  Type: BaseDataVariableType
+  DataType: Boolean

@@ -1,0 +1,147 @@
+Name: Translations
+Type: TranslationsCategoryFolder
+Children:
+- Name: LocalizationDictionary1
+  Id: g=2bebce1200bf12f9b4599e64d26e121c
+  Type: LocalizationDictionary
+  DataType: String
+  ValueRank: OneOrMoreDimensions
+  ArrayDimensions: [0,0]
+  Value: 
+   {
+    "Type": 12,
+    "Dimensions": [83,3],
+    "Body": [
+     "","en-US","it-IT",
+     "Value","Value","",
+     "Thickness","Thickness","",
+     "TimeTrace","Time Trace","",
+     "Enabled","Enabled","",
+     "XAxis Interactive","XAxis Interactive","",
+     "LegendVisible","LegendVisible","",
+     "YAxisInteractive","YAxisInteractive","",
+     "Follow","Follow","",
+     "Trend","Trend","",
+     "Min","Min","",
+     "DateAndTime","Date and time","",
+     "PenXTimeWindow","X Axis Time Window","",
+     "ClearTimeRanges","Clear Time Ranges","",
+     "Autoscale","Autoscale","",
+     "Max","Max","",
+     "Right","Right","",
+     "Left","Left","",
+     "Pen","Pen","",
+     "Position","Position","",
+     "End","End","",
+     "Statistics","Statistics","",
+     "SnapPosition","Snap Position","",
+     "Mode","Mode","",
+     "Normal","Normal","",
+     "Center","Center","",
+     "ClearTimeTraces","Clear Time Traces","",
+     "TimeRange","Time Range","",
+     "YAxis","Y Axis","",
+     "Apply","ApplyFromDB","",
+     "Red","Red","",
+     "Green","Green","",
+     "Timespan","Timespan","",
+     "Blue","Blue","",
+     "Alpha","Alpha","",
+     "Interactive","Interactive","",
+     "Avg","Avg","",
+     "Ranges","Ranges","",
+     "Start","Start","",
+     "Pens","Pens","",
+     "Background","Background","",
+     "Thresholds","Thresholds","",
+     "RecipesEditorStoreOfSchema","Store of schema","",
+     "Save","Save","",
+     "Delete","Delete","",
+     "Load","Load","",
+     "RecipeControllerRecipe","Recipe","",
+     "RecipeControllerEmptyRecipeName","Recipe name is empty","",
+     "RecipeControllerCreatedAndSaved","created and saved","",
+     "RecipeControllerDeleted","deleted","",
+     "RecipeControllerRecipeApplied","Recipe applied","",
+     "RecipeControllerRecipeLoaded","Recipe loaded","",
+     "RecipeControllerSaved","saved","",
+     "RecipesEditorNotARecipe","is not a recipe","",
+     "RecipesEditorRecipeSchemaNotFound","RecipeSchema variable not found","",
+     "RecipesEditorRecipeSchemaNotSet","RecipeSchema not set","",
+     "RecipesEditorRecipeNotFound","Recipe not found","",
+     "RecipesEditorNotAStore","is not a store","",
+     "RecipesEditorNotSet","is not set","",
+     "RecipesEditorStore","Store","",
+     "RecipesEditorNotFound","not found","",
+     "RecipesEditorEditModelOfSchema","EditModel of schema","",
+     "LoginChangePasswordFormPasswordTooShort","Password too short","",
+     "Confirm password","Confirm password","",
+     "Password","Password","",
+     "New password","New password","",
+     "LoginFormPasswordExpired","Password expired","",
+     "Login","Login","",
+     "Old password","Old password","",
+     "Change password","Change password","",
+     "Logout","Logout","",
+     "Current User:","Current User:","",
+     "Your password is expired. Please enter a new one","Your password is expired.\nPlease enter a new one.","",
+     "LoginFormLoginSuccessful","Login successful","",
+     "LoginChangePasswordFormUnsupportedOperation","Unsupported operation","",
+     "LoginFormAuthenticationFailed","Authentication failed","",
+     "LoginChangePasswordFormWrongOldPassword","Wrong old password","",
+     "LoginChangePasswordFormUserNotFound","User not found","",
+     "LoginChangePasswordFormPasswordAlreadyUsed","Password already used","",
+     "LoginChangePasswordFormPasswordChangedTooRecently","Password changed too recently","",
+     "LoginChangePasswordFormPasswordsDoNotMatch","Passwords do not match","",
+     "EXPORT","EXPORT","Esporta",
+     "Hello Florence!","Hello Florence!","Ciao Firenze!"
+    ]
+   }
+- Name: ImportAndExportTranslations
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: BehaviourStartPriority
+    Type: BehaviourStartPriorityVariableType
+    DataType: Byte
+    Value: 180
+  - Name: CSVPath
+    Type: BaseDataVariableType
+    DataType: AbsoluteResourceUri
+    Value: "file:///C:/temp/traduzioni.csv"
+  - Class: Method
+    Name: ExportTranslations
+  - Class: Method
+    Name: ImportTranslations
+  - Name: CharacterSeparator
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ","
+  - Name: WrapFields
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: LocalizationDictionary
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/NewHMIProject51/Translations/LocalizationDictionary1"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/VariableTypes/BaseVariableType/LocalizationDictionary"
+  - Name: ns=4;LibraryReference
+    Type: ObjectLibraryReference
+    DataType: ObjectLibraryReferenceDataType
+    Value: 
+     {
+      "TypeId": {
+       "Id": 72,
+       "Namespace": 4
+      },
+      "Body": {
+       "libraryGuid": "f0701375ee41467993d632db6a8fdaa5",
+       "objectGuid": "e7cab90d0ab7e8b5b02218e38bca9a0e",
+       "objectVersion": 1,
+       "highestIgnoredVersion": 0
+      }
+     }
